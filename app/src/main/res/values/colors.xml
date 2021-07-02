@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#576ee7</color>
+    <color name="colorPrimaryDark">#576ee7</color>
+    <color name="colorAccent">#576ee7</color>
+    <color name="background">#f4f6fd</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#565869</color>
+    <color name="grey_303030">#303030</color>
+    <color name="app_blue">#576ee7</color>
+    <color name="low_category">#0078d7</color>
+    <color name="normal_category">#00cc6a</color>
+    <color name="high_category">#e74856</color>
+
+</resources>

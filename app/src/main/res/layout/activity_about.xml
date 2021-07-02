@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AboutActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/actionBarItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_btn" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_extrabold"
+            android:text="@string/about"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="@string/about_bmi"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <TableRow android:background="#4056CF">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/nunito_semibold"
+                                android:gravity="center"
+                                android:text="Category"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/nunito_semibold"
+                                android:gravity="center"
+                                android:text="BMI (kg/m2)"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/low_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/very_severaly_underweight" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="Below 14.9" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/low_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/severaly_underweight" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="15 - 15.9" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/low_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/underweight" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="16 - 18.4" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/normal_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/normal" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="18.5 - 24.9" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/high_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/overweight" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="25 - 29.9" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/high_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/obese_class_i" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="30 - 34.9" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/high_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/obese_class_ii" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="35 - 39.9" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="1dp"
+                            android:background="@color/high_category">
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="@string/obese_class_iii" />
+
+                            <TextView
+                                style="@style/table_TextView"
+                                android:text="Above 40" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        style="@style/about_TextView_I"
+                        android:text="App name" />
+
+                    <TextView
+                        style="@style/about_TextView_II"
+                        android:text="@string/app_name" />
+
+                    <TextView
+                        style="@style/about_TextView_I"
+                        android:layout_marginTop="8dp"
+                        android:text="Version" />
+
+                    <TextView
+                        style="@style/about_TextView_II"
+                        android:text="1.0" />
+
+                    <TextView
+                        style="@style/about_TextView_I"
+                        android:layout_marginTop="8dp"
+                        android:text="Release date" />
+
+                    <TextView
+                        style="@style/about_TextView_II"
+                        android:text="July 2021" />
+
+                    <TextView
+                        style="@style/about_TextView_I"
+                        android:layout_marginTop="8dp"
+                        android:text="Developer" />
+
+                    <TextView
+                        style="@style/about_TextView_II"
+                        android:text="Habid Hossen Hridoy" />
+
+                    <TextView
+                        style="@style/about_TextView_I"
+                        android:layout_marginTop="8dp"
+                        android:text="Contact" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Email: habidhossen@gmail.com"
+                        android:textColor="@color/grey_303030"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Facebook: https://www.facebook.com/habidhossen"
+                        android:textColor="@color/grey_303030"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

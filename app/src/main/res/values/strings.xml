@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="about">About</string>
+    <string name="your_bmi">Your BMI</string>
+    <string name="normal_bmi_range">Normal BMI range: 18.5kg/m2 - 25kg/m2</string>
+    <string name="very_severaly_underweight">Very Severaly Underweight</string>
+    <string name="severaly_underweight">Severaly Underweight</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Overweight</string>
+    <string name="obese_class_i">Obese Class I</string>
+    <string name="obese_class_ii">Obese Class II</string>
+    <string name="obese_class_iii">Obese Class III</string>
+    <string name="about_bmi">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. \nBMI tables:</string>
+</resources>
