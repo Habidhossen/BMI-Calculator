@@ -1,4 +1,4 @@
-package com.habidhosen.bmicalculator;
+package com.habidhosen.bmicalculator21;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
