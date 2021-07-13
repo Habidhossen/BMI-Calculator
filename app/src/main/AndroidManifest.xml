@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.habidhosen.bmicalculator21">
+    package="com.habidhossen.bmicalculator21">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.habidhosen.bmicalculator21.MainActivity"
+            android:name="com.habidhossen.bmicalculator21.MainActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.habidhosen.bmicalculator21.AboutActivity"
+            android:name="com.habidhossen.bmicalculator21.AboutActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.habidhosen.bmicalculator21.ResultActivity"
+            android:name="com.habidhossen.bmicalculator21.ResultActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.habidhosen.bmicalculator21.SplashActivity"
+            android:name="com.habidhossen.bmicalculator21.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

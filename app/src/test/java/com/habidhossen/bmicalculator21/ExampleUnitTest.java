@@ -1,4 +1,4 @@
-package com.habidhosen.bmicalculator21;
+package com.habidhossen.bmicalculator21;
 
 import org.junit.Test;
 
